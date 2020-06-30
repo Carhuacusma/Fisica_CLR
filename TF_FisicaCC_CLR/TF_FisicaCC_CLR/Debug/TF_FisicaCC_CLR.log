@@ -1,8 +1,0 @@
-﻿  main.cpp
-g:\repospersonal\fisicainduccion\fisica_clr\tf_fisicacc_clr\tf_fisicacc_clr\mathp.hpp(140): warning C4244: 'inicializando': conversión de 'float' a 'ushort'; posible pérdida de datos
-g:\repospersonal\fisicainduccion\fisica_clr\tf_fisicacc_clr\tf_fisicacc_clr\main.cpp(39): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-g:\repospersonal\fisicainduccion\fisica_clr\tf_fisicacc_clr\tf_fisicacc_clr\main.cpp(63): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-g:\repospersonal\fisicainduccion\fisica_clr\tf_fisicacc_clr\tf_fisicacc_clr\main.cpp(75): warning C4244: 'argumento': conversión de 'double' a 'short'; posible pérdida de datos
-g:\repospersonal\fisicainduccion\fisica_clr\tf_fisicacc_clr\tf_fisicacc_clr\mathp.hpp(317): warning C4715: 'derivada': no todas las rutas de acceso de control devuelven un valor
-  main.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  TF_FisicaCC_CLR.vcxproj -> G:\reposPersonal\fisicaInduccion\Fisica_CLR\TF_FisicaCC_CLR\Debug\TF_FisicaCC_CLR.exe
