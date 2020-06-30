@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
@@ -29,3 +30,36 @@ Global
 		SolutionGuid = {84143426-64FC-4689-87BB-BCD7FF47F705}
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TF_FisicaCC_CLR", "TF_FisicaCC_CLR\TF_FisicaCC_CLR.vcxproj", "{2A4EE379-AA67-4D84-8C3C-A496D412953E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Debug|x64.ActiveCfg = Debug|x64
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Debug|x64.Build.0 = Debug|x64
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Debug|x86.ActiveCfg = Debug|Win32
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Debug|x86.Build.0 = Debug|Win32
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Release|x64.ActiveCfg = Release|x64
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Release|x64.Build.0 = Release|x64
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Release|x86.ActiveCfg = Release|Win32
+		{2A4EE379-AA67-4D84-8C3C-A496D412953E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84143426-64FC-4689-87BB-BCD7FF47F705}
+	EndGlobalSection
+EndGlobal
+>>>>>>> a8ece0039ce3e972cec4ed746d34e3aa2b84a3eb
