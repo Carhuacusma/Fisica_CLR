@@ -18,12 +18,7 @@ void borrar(short x, short y) {
 using namespace TFFisicaCCCLR;
 
 int main() {
-	//La clase de mi formulario tendrá el nombre acuñado
-	//en el paso anterior
-	//Instanciamos un puntero a un nuevo objeto de la clase
-	//formulario que creamos
 	Fisica_Induccion^ form = gcnew Fisica_Induccion;
-	//Solicitamos a la aplicación que ejecute el formulario
 	Application::Run(form);
 	return 0;
 }
