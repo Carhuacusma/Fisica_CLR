@@ -40,6 +40,7 @@ public:
 
 	polinomio* getB() { return this->B; }
 	vec3* getDir() { return this->dirB; }
+	double getResultado(double x) { return this->B->resultado(x); }
 };
 
 class ce_control {

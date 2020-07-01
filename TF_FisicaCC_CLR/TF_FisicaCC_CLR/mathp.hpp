@@ -64,7 +64,7 @@ public:
 class polinomio {
 	ushort nter;				// n terminos
 	double* c;				// coeficientes
-	float* exp;	// exponentes
+	float* exp;				// exponentes
 	ushort grado;
 	void limpiar() {
 		ushort j = 0;
@@ -326,6 +326,13 @@ vec3 suma(vec3* v1, vec3* v2) {
 vec3 resta(vec3* v1, vec3* v2) {
 	//OKO REDUNDANCIA PORQUE BASTA suma(v1,v2*-1)
 	return vec3(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
+}
+double distancia(vec3* p1, vec3* p2) {
+	double sum = 0;
+	sum += std::pow(p1->x - p2->x, 2);
+	sum += std::pow(p1->y - p2->y, 2);
+	sum += std::pow(p1->z - p2->z, 2);
+	return std::pow(sum, 0.5);
 }
 #pragma endregion
 
