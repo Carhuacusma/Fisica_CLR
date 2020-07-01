@@ -124,12 +124,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fisica_Induccion.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ejemplo1.hpp" />
     <ClInclude Include="faraday.hpp" />
+    <ClInclude Include="Fisica_Induccion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="mathp.hpp" />
+    <ClInclude Include="simulacion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fisica_Induccion.resx">
+      <DependentUpon>Fisica_Induccion.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
