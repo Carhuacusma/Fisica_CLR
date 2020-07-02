@@ -21,6 +21,15 @@
     <ClCompile Include="Fisica_Induccion.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+    <ClCompile Include="mathp.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
+    <ClCompile Include="polinomio.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="simulacion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ejemplo1.hpp">
@@ -36,6 +45,9 @@
       <Filter>Archivos de recursos</Filter>
     </ClInclude>
     <ClInclude Include="simulacion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="polinomio.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

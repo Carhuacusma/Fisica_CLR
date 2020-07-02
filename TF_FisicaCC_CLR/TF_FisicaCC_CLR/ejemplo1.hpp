@@ -8,43 +8,9 @@
 //Douzo.
 
 using namespace std;
-
-//La que define área. (Donde están las espiras)
-class ce_torre {
-	unsigned short N; // N espiras
-	double A;
-	vec3* dirNA; // La dirección de la normal de área
-public:
-	ce_torre(unsigned short n, double a, vec3* dir): N(n), A(a), dirNA(dir) { }
-	ce_torre(unsigned short n, double a, double dir1 = 0, double dir2 = 1, double dir3 = 0): N(n), A(a) { 
-		this->dirNA = new vec3(dir1, dir2, dir3);
-		//Por defecto la Normal sería 'j' (Eje Y positivo)
-	}
-	~ce_torre() { delete this->dirNA; }
-
-	double getArea() { return this->A; };
-	unsigned short getN() { return this->N; }
-	vec3* getNormal() { return this->dirNA; }
-};
-
-//El campo elétrico
-class ce_campo {
-	polinomio* B;
-	vec3* dirB;
-public:
-	ce_campo(polinomio* b, vec3* dB): B(b), dirB(dB) { }
-	~ce_campo() {
-		delete this->B;
-		delete this->dirB;
-	}
-
-	polinomio* getB() { return this->B; }
-	vec3* getDir() { return this->dirB; }
-	double getResultado(double x) { return this->B->resultado(x); }
-};
-
+using namespace faraday;
 class ce_control {
-	ce_torre* espiras;
+	ce_conjEspiras* espiras;
 	ce_campo* campo;
 	polinomio* flujo, *fem;
 	void menuVector(vec3* v) {
@@ -66,12 +32,12 @@ class ce_control {
 		}
 	}
 public:
-	ce_control(ce_torre* Espiras, ce_campo* campoElec) : espiras(Espiras), campo(campoElec), flujo(nullptr), fem(nullptr) { }
+	ce_control(ce_conjEspiras* Espiras, ce_campo* campoElec) : espiras(Espiras), campo(campoElec), flujo(nullptr), fem(nullptr) { }
 	void creaEspiras(unsigned short nEspiras, double area) {
-		this->espiras = new ce_torre(nEspiras, area);
+		this->espiras = new ce_conjEspiras(nEspiras, area);
 	}
 	void creaEspiras(unsigned short nEspiras, double area, vec3* dirN) {
-		this->espiras = new ce_torre(nEspiras, area, dirN);
+		this->espiras = new ce_conjEspiras(nEspiras, area, dirN);
 	}
 	void creaCampo(polinomio* B, vec3* dirB) { this->campo = new ce_campo(B, dirB); }
 	//TO DO: menu creacion Campo
@@ -94,7 +60,7 @@ public:
 		cout << "Sobre la normal del área: ";
 		vec3* normal = nullptr;
 		this->menuVector(normal);
-		this->espiras = new ce_torre(nEspiras, area, normal);
+		this->espiras = new ce_conjEspiras(nEspiras, area, normal);
 	}
 	void menuCreacionCampo() {
 

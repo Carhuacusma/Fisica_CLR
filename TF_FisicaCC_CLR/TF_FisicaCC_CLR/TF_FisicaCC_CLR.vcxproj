@@ -126,6 +126,9 @@
   <ItemGroup>
     <ClCompile Include="Fisica_Induccion.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mathp.cpp" />
+    <ClCompile Include="polinomio.cpp" />
+    <ClCompile Include="simulacion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ejemplo1.hpp" />
@@ -134,6 +137,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="mathp.hpp" />
+    <ClInclude Include="polinomio.h" />
     <ClInclude Include="simulacion.h" />
   </ItemGroup>
   <ItemGroup>
